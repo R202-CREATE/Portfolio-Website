@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Crete+Round:ital@1&family=Noticia+Text:ital@1&family=Noto+Serif+Display:ital,wght@1,300&family=Playfair+Display:ital@1&family=Prata&family=Roboto&family=Source+Code+Pro&display=swap');
+
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 30px;
+}
+
+.description{
+  font-size: 1.4rem;
+}
+
+.wrapper{
+  width:70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Source Code Pro";
+  
+}
+.subContainerDark{
+  
+  padding:0px 20px 20px 20px;
+  box-shadow: 6px 8px 9px rgba(0,0,0,0.65);
+}
+.subContainerLight{
+  padding:0px 20px 20px 20px;
+  box-shadow: 0px 0px 25px rgba(255,255,255,0.5);
+}
+
+.rightSection{
+  margin-left: 20px;
+}
+.photo{
+  object-fit: cover;
+  margin-left: 20px;
+}
+.nameLightMode{
+  font-size:2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(252, 84, 84);
+}
+.nameDarkMode{
+  font-size:2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: cyan;
+}
+
+.icons{
+  font-size: 3rem;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.icons:hover{
+  transform: scale(1.1);
+  color: dimgrey;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    margin-top: 3rem;
+  }
+  .nameDarkMode, .nameLightMode{
+    font-size: 1.6rem;
+    padding-top: 15px;
+  }
+  .wrapper{
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  .rightSection{
+    margin-top: 30px;
+  }
+  .subContainerLight{
+    border: none;
+  }
+  .description{
+    padding: 7px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+

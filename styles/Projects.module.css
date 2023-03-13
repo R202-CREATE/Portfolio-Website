@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Crete+Round:ital@1&family=Noticia+Text:ital@1&family=Noto+Serif+Display:ital,wght@1,300&family=Playfair+Display:ital@1&family=Prata&family=Roboto&family=Source+Code+Pro&display=swap');
+
+
+.container {
+  min-height: 100vh;
+  padding: 0px 100px;
+  color: black;
+  margin-top: 50px;
+  font-family: "Cairo";
+}
+
+.projectTitle {
+  font-size: 40px;
+  color: red;
+  text-transform: uppercase;
+  border-bottom: 1px solid crimson;
+  width: max-content;
+  text-align: start;
+  font-family: "Source Code Pro";
+  margin-top: 50px;
+}
+
+.project {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 3rem;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width:376px) {
+    .projectTitle{
+        font-size: 30px;
+    }
+}
